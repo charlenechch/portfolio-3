@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
   const message = process.env.GREETING || 'Hello from Node.js!';
-  res.send(`<h1>${message}</h1>`);
+  res.send(`<h1>${message}</h1><p>Auto-deployed via Git push</p>`);
 });
 
 app.listen(PORT, () => {
